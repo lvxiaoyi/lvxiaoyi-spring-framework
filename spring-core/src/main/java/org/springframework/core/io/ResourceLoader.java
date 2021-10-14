@@ -20,7 +20,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.ResourceUtils;
 
 /**
- * Strategy interface for loading resources (e.g., class path or file system
+ * Strategy interface（策略接口） for loading resources (e.g., class path or file system
  * resources). An {@link org.springframework.context.ApplicationContext}
  * is required to provide this functionality plus extended
  * {@link org.springframework.core.io.support.ResourcePatternResolver} support.
@@ -65,6 +65,7 @@ public interface ResourceLoader {
 	 * @see Resource#getInputStream()
 	 */
 	Resource getResource(String location);
+
 
 	/**
 	 * Expose the {@link ClassLoader} used by this {@code ResourceLoader}.
